@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="urf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://timeago.yarp.com/jquery.timeago.js"></script>
+    <script type="text/javascript">
+    //Bind enter key to send messages
+    $(document).bind('keyup', function(e) {
+        
+        if(e.keyCode==13){
+            // send message to server
+            sendText();
+
+            // Blank the text input element, ready to receive the next line of text from the user.
+            document.getElementById("message").value = "";
+        }
+    });
+
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#top-link-block').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
+    </script>
+    <script src="./sockets.js">></script>
+
+</head>
+
+<body>
+</body>
+    <div id="container">
+        <h1>Chat</h1>
+        <div id="chatbox">
+            <input type="text" id="message" placeholder="Message goes here. Press Enter key to send">
+        
+            <div>
+                <ul class="chat" id="output">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a class="back-to-top glyphicon glyphicon-arrow-up btn btn-info" href="#" title="Top">Back to top</a>
+</body>
+</html>

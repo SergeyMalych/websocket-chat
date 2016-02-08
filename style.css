@@ -1,0 +1,106 @@
+body {
+    background: url('http://blog.ioncube.com/wp-content/uploads/2013/12/blue-cloud-background-blue2-19029417-1920-9861.jpg') no-repeat;
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.img-circle {
+    width: 4em;
+    height: 4em;
+    border: 1px solid #fff;
+}
+
+.msgtext {
+    margin-top: 50px;
+}
+
+.system {
+    background-color: #ddd;
+    border-radius: 20px;
+    font-size: 0.5em;
+    width: 60%;
+    margin: auto;
+    padding: 0.2em;
+    margin-top:0.5em;
+}
+
+#container {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+.imgright {
+    position: relative;
+    float: right;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    color: #eee;
+    text-shadow: 0 -1px 0 rgba( 0, 0, 0, .6 );
+    font-size: 5em;
+    display: block;
+}
+
+input {
+    position: relative;
+    border: 5px solid white; 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 25px;
+    width: 90%;
+    margin-bottom: 2em;
+}
+
+#chatbox {
+    background-color: rgba( 230, 230, 230, .4 );
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 1em;
+}
+
+
+
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    padding-bottom: 1em;
+}
+
+.chat li.left .chat-body
+{
+    /*
+    margin-left: 60px;*/
+}
+
+.chat li.right .chat-body
+{
+    /*margin-right: 60px;*/
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    /*margin-right: 5px;*/
+}
+
+
+.right clearfix{
+    background-color: rgba(255,255,255,0.4);
+}
